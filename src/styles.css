@@ -1,0 +1,399 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: rgb(252, 252, 252);
+}
+.navbar {
+  /* border: 1px solid black; */
+  width: 90%;
+  height: 3.5em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  justify-content: space-around;
+}
+.nav-div1 {
+  background-color: transparent;
+  border: 0;
+  font-size: x-large;
+  /* height: 10px; */
+  font-weight: 700;
+  padding: 1em 0 0 20em;
+}
+
+.homeicon {
+  text-decoration: underline;
+  color: gray;
+}
+/* .scrol {
+  border: none;
+}
+.scrol:hover {
+  border: none;
+} */
+a:hover {
+  border-bottom: 1px solid black;
+}
+.nav-div2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-div1 {
+  display: flex;
+}
+.nav-div1 > ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-div1 > ul > li {
+  margin-right: 1.5em;
+}
+.nav-div1 > ul > li > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar label {
+  margin: 15px 10px;
+}
+/* .nav-div1 > div:hover {
+  border-bottom: 1px solid black;
+} */
+.dark-mode {
+  background-color: rgb(35, 40, 62);
+  color: rgb(144, 160, 217);
+}
+
+/* switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 4px;
+  height: 2px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+/* input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}  */
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* About section */
+/* .about div {
+  border: 1px solid red;
+} */
+.about {
+  margin-top: 75px;
+  /* border: 1px solid black; */
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.goodfon.com%2Fwallpaper%2Fnature-scenery-beauty.html&psig=AOvVaw3L3UZ_h2I0ngJ4o28esAHA&ust=1651390760859000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNipsJuku_cCFQAAAAAdAAAAABAP");
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  /* padding-left: 10%; */
+}
+.profile > img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  border-radius: 50%;
+}
+.aboutDes {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 30% 40% 20%;
+  justify-content: center;
+}
+.name {
+  font-size: xx-large;
+  font-weight: bold;
+  color: gray;
+}
+.name:hover {
+  color: black;
+}
+.span {
+  color: royalblue;
+}
+.objectives > p {
+  font-size: x-large;
+  text-align: left;
+}
+.objectives {
+  padding: 0 15px;
+}
+.giticon {
+  padding: 20px;
+  font-size: xxx-large;
+  color: gray;
+  /* color:black; */
+}
+.giticon:hover {
+  color: black;
+  border: none;
+}
+.git > button {
+  font-size: large;
+  padding: 0px 50px;
+  color: royalblue;
+  background-color: transparent;
+  border: 0.5px solid royalblue;
+}
+.git > button:hover {
+  background-color: royalblue;
+  color: white;
+}
+.git {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+/* Projects */
+/* .projects > div {
+  border: 1px solid red;
+} */
+.proje {
+  margin-top: 50px;
+}
+.projects {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: 70%;
+  justify-content: space-evenly;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card > p {
+  font-size: 20px;
+}
+
+/* skills */
+
+.skills {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 50px;
+  width: 90%;
+  height: 400px;
+}
+.skills {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-evenly;
+}
+
+/* Contacts */
+
+.contacts {
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 80%;
+}
+.contacts > div > a {
+  color: gray;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  /* margin-left: 100px; */
+
+  color: gray;
+  height: 200px;
+}
+form > input {
+  height: 20px;
+}
+form {
+  height: 200px;
+  display: grid;
+}
+.submit {
+  background-color: white;
+  color: royalblue;
+  font-weight: bold;
+  border: 1px solid royalblue;
+  width: 100px;
+  height: 25px;
+}
+.submit:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 100px) {
+  .navbar {
+    /* border: 1px solid black; */
+    width: 90%;
+
+    height: 6em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px;
+    justify-content: space-evenly;
+  }
+  .nav-div1 {
+    background-color: transparent;
+    border: 0;
+    font-size: medium;
+    /* height: 10px; */
+    font-weight: 700;
+    padding: 1em 0em 0em 20em;
+  }
+  .nav-div1 > ul {
+    margin-left: -15em;
+  }
+  /* .navbar {
+    border: 1px solid black;
+    width: 90%;
+    height: 5em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  } */
+  .nav-div1 > div {
+    background-color: transparent;
+    border: 0;
+    font-size: small;
+    height: 10px;
+    font-weight: 700;
+    padding: 1.5em 0;
+  }
+
+  .about {
+    margin-top: 50px;
+    /* border: 1px solid black; */
+
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    padding-left: 10%;
+  }
+
+  .proje {
+    margin-top: 50px;
+  }
+  .projects {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 500px;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: 70%;
+    justify-content: space-evenly;
+  }
+  .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .card > p {
+    font-size: 20px;
+  }
+
+  /* skills */
+
+  .skills {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+  }
+  #skills {
+    margin-top: 300px;
+  }
+  .contacts {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 100%;
+  }
+  .footer {
+    margin-top: 350px;
+  }
+}
